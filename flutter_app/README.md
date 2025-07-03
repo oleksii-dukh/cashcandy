@@ -1,16 +1,54 @@
-# flutter_app
+# CashCandy Flutter App
 
-A new Flutter project.
+A complete money-saving app built with Flutter and Go backend.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+This Flutter app connects to your Go backend to provide a full-featured savings goal tracking application.
 
-A few resources to get you started if this is your first Flutter project:
+### 🚀 Quick Setup
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+1. **Install dependencies:**
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+   ```bash
+   flutter pub get
+   ```
+
+2. **Generate JSON serialization:**
+
+   ```bash
+   dart run build_runner build
+   ```
+
+3. **Start the Go backend:**
+
+   ```bash
+   cd ../go-backend
+   go run main.go
+   ```
+
+4. **Run the Flutter app:**
+   ```bash
+   flutter run
+   ```
+
+### 📱 Features
+
+- User authentication (login/register)
+- Dashboard with savings statistics
+- Create and manage savings goals
+- Add/remove money from goals
+- Progress tracking with visual indicators
+- Real-time updates
+
+### 🏗️ Architecture
+
+The app uses a clean architecture with:
+
+- **Models:** Data structures for API communication
+- **Services:** API calls and local storage
+- **Providers:** State management (similar to Svelte stores)
+- **Screens:** UI pages/routes
+- **Widgets:** Reusable UI components
+
+For detailed documentation, see the full README in the project root.
